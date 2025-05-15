@@ -1,13 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/index.css" />
-        <title>JS starter</title>
-    </head>
-    <body>
-        <script type="module" src="./src/init.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Finder</title>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <div class="container">
+    <h1>📚 Book Finder</h1>
+    <form id="form">
+        <input id="searchInput" type="text" placeholder="Enter book title..." />
+        <button type="submit">Search</button>
+    </form>
+    <p id="error" class="error"></p>
+    <div id="booksContainer" class="books-grid"></div>
+    </div>
+
+    <script src="./src/init.js"></script>
+</body>
 </html>
